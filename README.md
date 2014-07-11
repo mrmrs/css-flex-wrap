@@ -24,21 +24,21 @@ or download the css on github and include in your project.
 .fw-wraprev { flex-wrap: wrap-reverse; }
 .fw-i {       flex-wrap: inherit; }
 
-@include break(not-small) {
+@media screen and (min-width: 48em) {
   .fw-no-ns {      flex-wrap: nowrap; }
   .fw-wrap-ns {    flex-wrap: wrap; }
   .fw-wraprev-ns { flex-wrap: wrap-reverse; }
   .fw-i-ns {       flex-wrap: inherit; }
 }
 
-@include break(medium) {
+@media screen and (min-width: 48em) and (max-width: 64em) {
   .fw-no-m {      flex-wrap: nowrap; }
   .fw-wrap-m {    flex-wrap: wrap; }
   .fw-wraprev-m { flex-wrap: wrap-reverse; }
   .fw-i-m {       flex-wrap: inherit; }
 }
 
-@include break(large) {
+@media screen and (min-width: 64em)  {
   .fw-no-l {      flex-wrap: nowrap; }
   .fw-wrap-l {    flex-wrap: wrap; }
   .fw-wraprev-l { flex-wrap: wrap-reverse; }
