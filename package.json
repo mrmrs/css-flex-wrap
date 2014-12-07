@@ -1,5 +1,6 @@
 {
   "name": "css-flex-wrap",
+  "style": "flex-wrap.css",
   "version": "0.0.5",
   "homepage": "http://github.com/mrmrs/css-flex-wrap",
   "description": "Css module of single purpose classes for flex wrap",
