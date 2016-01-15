@@ -1,15 +1,26 @@
+/*
+   FLEX WRAP
+*/
+.fw-no { flex-wrap: nowrap; }
+.fw-wrap { flex-wrap: wrap; }
+.fw-wraprev { flex-wrap: wrap-reverse; }
+.fw-i { flex-wrap: inherit; }
+@media screen and (min-width: 48em) {
+ .fw-no-ns { flex-wrap: nowrap; }
+ .fw-wrap-ns { flex-wrap: wrap; }
+ .fw-wraprev-ns { flex-wrap: wrap-reverse; }
+ .fw-i-ns { flex-wrap: inherit; }
+}
+@media screen and (min-width:48em) and (max-width: 64em) {
+ .fw-no-m { flex-wrap: nowrap; }
+ .fw-wrap-m { flex-wrap: wrap; }
+ .fw-wraprev-m { flex-wrap: wrap-reverse; }
+ .fw-i-m { flex-wrap: inherit; }
+}
+@media screen and (min-width: 64em) {
+ .fw-no-l { flex-wrap: nowrap; }
+ .fw-wrap-l { flex-wrap: wrap; }
+ .fw-wraprev-l { flex-wrap: wrap-reverse; }
+ .fw-i-l { flex-wrap: inherit; }
+}
 
-  Postprocess tachyons stylesheets
-
-  Usage
-    $ tachyons <input.css>
-
-  Options
-    -m, --minify Minify the output stylesheet
-    --generate-docs Generate documentation for a given module
-    --package The path to the module package to be documented
-
-  Example
-    $ tachyons src/tachyons.css > dist/c.css
-    $ tachyons src/tachyons.css > dist/c.css --minify
-    $ tachyons src/tachyons-type-scale.css --generate-docs --package=./package.json > readme.md
