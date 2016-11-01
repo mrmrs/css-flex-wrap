@@ -1,10 +1,10 @@
-# css-flex-wrap 0.0.7
+# css-flex-wrap 1.0.6
 
 Css module of single purpose classes for flex wrap
 
 #### Stats
 
-205 | 16 | 16
+224 | 16 | 32
 ---|---|---
 bytes | selectors | declarations
 
@@ -16,15 +16,25 @@ bytes | selectors | declarations
 npm install --save-dev css-flex-wrap
 ```
 
+Learn more about using css installed with npm:
+* https://webpack.github.io/docs/stylesheets.html
+* https://github.com/defunctzombie/npm-css
+
 #### With Git
 
+http:
 ```
 git clone https://github.com/tachyons-css/css-flex-wrap
 ```
 
+ssh:
+```
+git clone git@github.com:tachyons-css/css-flex-wrap.git
+```
+
 ## Usage
 
-#### Using with [PostCSS](https://github.com/postcss/postcss)
+#### Using with [Postcss](https://github.com/postcss/postcss)
 
 Import the css module
 
@@ -32,16 +42,24 @@ Import the css module
 @import "css-flex-wrap";
 ```
 
-Then process the CSS using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
+Then process the css using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
 
 ```sh
 $ npm i -g tachyons-cli
-$ tachyons-cli path/to/css-file.css > dist/t.css
+$ tachyons path/to/css-file.css > dist/t.css
 ```
 
-#### Using the CSS
+#### Using the css
 
-The built CSS is located in the `css` directory. It contains an unminified and minified version.
+##### CDN
+The easiest and most simple way to use the css is to use the cdn hosted version. Include it in the head of your html with:
+
+```
+<link rel="stylesheet" href="http://unpkg.com/css-flex-wrap@1.0.6/css/css-flex-wrap.min.css" />
+```
+
+##### Locally
+The built css is located in the `css` directory. It contains an unminified and minified version.
 You can either cut and paste that css or link to it directly in your html.
 
 ```html
@@ -50,36 +68,36 @@ You can either cut and paste that css or link to it directly in your html.
 
 #### Development
 
-The source CSS files can be found in the `src` directory.
-Running `$ npm start` will process the source CSS and place the built CSS in the `css` directory.
+The source css files can be found in the `src` directory.
+Running `$ npm start` will process the source css and place the built css in the `css` directory.
 
-## The CSS
+## The css
 
 ```css
 /*
    FLEX WRAP
 */
-.fw-no { flex-wrap: nowrap; }
-.fw-wrap { flex-wrap: wrap; }
-.fw-wraprev { flex-wrap: wrap-reverse; }
-.fw-i { flex-wrap: inherit; }
+.fw-no { -ms-flex-wrap: nowrap; flex-wrap: nowrap; }
+.fw-wrap { -ms-flex-wrap: wrap; flex-wrap: wrap; }
+.fw-wraprev { -ms-flex-wrap: wrap-reverse; flex-wrap: wrap-reverse; }
+.fw-i { -ms-flex-wrap: inherit; flex-wrap: inherit; }
 @media screen and (min-width: 48em) {
- .fw-no-ns { flex-wrap: nowrap; }
- .fw-wrap-ns { flex-wrap: wrap; }
- .fw-wraprev-ns { flex-wrap: wrap-reverse; }
- .fw-i-ns { flex-wrap: inherit; }
+ .fw-no-ns { -ms-flex-wrap: nowrap; flex-wrap: nowrap; }
+ .fw-wrap-ns { -ms-flex-wrap: wrap; flex-wrap: wrap; }
+ .fw-wraprev-ns { -ms-flex-wrap: wrap-reverse; flex-wrap: wrap-reverse; }
+ .fw-i-ns { -ms-flex-wrap: inherit; flex-wrap: inherit; }
 }
 @media screen and (min-width:48em) and (max-width: 64em) {
- .fw-no-m { flex-wrap: nowrap; }
- .fw-wrap-m { flex-wrap: wrap; }
- .fw-wraprev-m { flex-wrap: wrap-reverse; }
- .fw-i-m { flex-wrap: inherit; }
+ .fw-no-m { -ms-flex-wrap: nowrap; flex-wrap: nowrap; }
+ .fw-wrap-m { -ms-flex-wrap: wrap; flex-wrap: wrap; }
+ .fw-wraprev-m { -ms-flex-wrap: wrap-reverse; flex-wrap: wrap-reverse; }
+ .fw-i-m { -ms-flex-wrap: inherit; flex-wrap: inherit; }
 }
 @media screen and (min-width: 64em) {
- .fw-no-l { flex-wrap: nowrap; }
- .fw-wrap-l { flex-wrap: wrap; }
- .fw-wraprev-l { flex-wrap: wrap-reverse; }
- .fw-i-l { flex-wrap: inherit; }
+ .fw-no-l { -ms-flex-wrap: nowrap; flex-wrap: nowrap; }
+ .fw-wrap-l { -ms-flex-wrap: wrap; flex-wrap: wrap; }
+ .fw-wraprev-l { -ms-flex-wrap: wrap-reverse; flex-wrap: wrap-reverse; }
+ .fw-i-l { -ms-flex-wrap: inherit; flex-wrap: inherit; }
 }
 ```
 
@@ -99,3 +117,4 @@ Running `$ npm start` will process the source CSS and place the built CSS in the
 ## License
 
 ISC
+
