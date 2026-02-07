@@ -8,10 +8,10 @@
 .fw-i {       flex-wrap: inherit; }
 
 @media screen and (min-width: 48em) {
-  .fw-no-ns {      flex-wrap: nowrap; }
-  .fw-wrap-ns {    flex-wrap: wrap; }
-  .fw-wraprev-ns { flex-wrap: wrap-reverse; }
-  .fw-i-ns {       flex-wrap: inherit; }
+  .fw-no-s {      flex-wrap: nowrap; }
+  .fw-wrap-s {    flex-wrap: wrap; }
+  .fw-wraprev-s { flex-wrap: wrap-reverse; }
+  .fw-i-s {       flex-wrap: inherit; }
 }
 
 @media screen and (min-width:48em) and (max-width: 64em) {
