@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const { transform } = require('lightningcss');
 
-const srcFile = path.join(__dirname, 'src', 'css-flex-wrap.css');
+const srcFile = path.join(__dirname, 'src', 'flex-wrap.css');
 const distDir = path.join(__dirname, 'dist');
 
 // Read source
@@ -15,22 +15,22 @@ if (!fs.existsSync(distDir)) {
 
 // Unminified — just normalize formatting
 const { code: unminified } = transform({
-  filename: 'css-flex-wrap.css',
+  filename: 'flex-wrap.css',
   code: Buffer.from(source),
   minify: false,
 });
 
-fs.writeFileSync(path.join(distDir, 'css-flex-wrap.css'), unminified);
+fs.writeFileSync(path.join(distDir, 'flex-wrap.css'), unminified);
 
 // Minified
 const { code: minified } = transform({
-  filename: 'css-flex-wrap.css',
+  filename: 'flex-wrap.css',
   code: Buffer.from(source),
   minify: true,
 });
 
-fs.writeFileSync(path.join(distDir, 'css-flex-wrap.min.css'), minified);
+fs.writeFileSync(path.join(distDir, 'flex-wrap.min.css'), minified);
 
 console.log('Build complete:');
-console.log(`  dist/css-flex-wrap.css     ${unminified.length} bytes`);
-console.log(`  dist/css-flex-wrap.min.css ${minified.length} bytes`);
+console.log(`  dist/flex-wrap.css     ${unminified.length} bytes`);
+console.log(`  dist/flex-wrap.min.css ${minified.length} bytes`);
