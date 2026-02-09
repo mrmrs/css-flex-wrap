@@ -1,38 +1,44 @@
 {
   "name": "css-flex-wrap",
-  "style": "flex-wrap.css",
-  "version": "1.0.8",
-  "homepage": "http://github.com/mrmrs/css-flex-wrap",
-  "description": "Css module of single purpose classes for flex wrap",
+  "version": "2.0.0",
+  "description": "Functional CSS for flex-wrap",
+  "style": "dist/flex-wrap.css",
+  "main": "dist/flex-wrap.css",
+  "exports": {
+    ".": "./dist/flex-wrap.css",
+    "./dist/*": "./dist/*",
+    "./src/*": "./src/*"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "node build.js",
+    "prepublishOnly": "npm run build"
+  },
   "keywords": [
     "css",
-    "oocss",
-    "flex-wrap"
+    "flex-wrap",
+    "utility",
+    "single-purpose",
+    "functional-css"
   ],
-  "css-flex-wrap": {
+  "homepage": "https://github.com/mrmrs/css-flex-wrap",
+  "repository": {
     "type": "git",
-    "url": "http://github.com/mrmrs/css-flex-wrap.git"
+    "url": "https://github.com/mrmrs/css-flex-wrap.git"
   },
   "bugs": {
-    "url": "https://github.com/mrmrs/css-flex-wrap/issues",
-    "email": "hi@mrmrs.cc"
+    "url": "https://github.com/mrmrs/css-flex-wrap/issues"
   },
   "author": {
     "name": "Adam Morse",
     "email": "hi@mrmrs.cc",
     "url": "http://mrmrs.cc"
   },
-  "contributors": [
-    {
-      "name": "Adam Morse",
-      "email": "hi@mrmrs.cc"
-    }
-  ],
-  "license": "MIT",
+  "license": "ISC",
   "devDependencies": {
     "lightningcss": "^1"
-  },
-  "scripts": {
-    "build": "node build.js"
   }
 }
