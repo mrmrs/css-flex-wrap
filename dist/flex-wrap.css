@@ -1,69 +1,69 @@
-.flex-nowrap {
+.fw-no {
   flex-wrap: nowrap;
 }
 
-.flex-wrap {
+.fw-wrap {
   flex-wrap: wrap;
 }
 
-.flex-wrap-reverse {
+.fw-wraprev {
   flex-wrap: wrap-reverse;
 }
 
-.flex-wrap-inherit {
+.fw-i {
   flex-wrap: inherit;
 }
 
 @media screen and (width >= 48em) {
-  .flex-nowrap-s {
+  .fw-no-s {
     flex-wrap: nowrap;
   }
 
-  .flex-wrap-s {
+  .fw-wrap-s {
     flex-wrap: wrap;
   }
 
-  .flex-wrap-reverse-s {
+  .fw-wraprev-s {
     flex-wrap: wrap-reverse;
   }
 
-  .flex-wrap-inherit-s {
+  .fw-i-s {
     flex-wrap: inherit;
   }
 }
 
 @media screen and (width >= 48em) and (width <= 64em) {
-  .flex-nowrap-m {
+  .fw-no-m {
     flex-wrap: nowrap;
   }
 
-  .flex-wrap-m {
+  .fw-wrap-m {
     flex-wrap: wrap;
   }
 
-  .flex-wrap-reverse-m {
+  .fw-wraprev-m {
     flex-wrap: wrap-reverse;
   }
 
-  .flex-wrap-inherit-m {
+  .fw-i-m {
     flex-wrap: inherit;
   }
 }
 
 @media screen and (width >= 64em) {
-  .flex-nowrap-l {
+  .fw-no-l {
     flex-wrap: nowrap;
   }
 
-  .flex-wrap-l {
+  .fw-wrap-l {
     flex-wrap: wrap;
   }
 
-  .flex-wrap-reverse-l {
+  .fw-wraprev-l {
     flex-wrap: wrap-reverse;
   }
 
-  .flex-wrap-inherit-l {
+  .fw-i-l {
     flex-wrap: inherit;
   }
 }

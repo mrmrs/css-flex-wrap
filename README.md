@@ -6,8 +6,8 @@ Functional CSS for flex-wrap
 
 | File | Size |
 |------|------|
-| `dist/flex-wrap.css` | 913 bytes |
-| `dist/flex-wrap.min.css` | 681 bytes (169 Gzipped) |
+| `dist/flex-wrap.css` | 801 bytes |
+| `dist/flex-wrap.min.css` | 569 bytes (164 Gzipped) |
 
 ## Install
 
@@ -39,22 +39,22 @@ npm install css-flex-wrap
 
 | Class   | Value                    |
 |---------|--------------------------|
-| `.flex-nowrap` | `flex-wrap: nowrap;` |
-| `.flex-wrap` | `flex-wrap: wrap;` |
-| `.flex-wrap-reverse` | `flex-wrap: wrap-reverse;` |
-| `.flex-wrap-inherit` | `flex-wrap: inherit;` |
-| `.flex-nowrap-s` | `flex-wrap: nowrap;` |
-| `.flex-wrap-s` | `flex-wrap: wrap;` |
-| `.flex-wrap-reverse-s` | `flex-wrap: wrap-reverse;` |
-| `.flex-wrap-inherit-s` | `flex-wrap: inherit;` |
-| `.flex-nowrap-m` | `flex-wrap: nowrap;` |
-| `.flex-wrap-m` | `flex-wrap: wrap;` |
-| `.flex-wrap-reverse-m` | `flex-wrap: wrap-reverse;` |
-| `.flex-wrap-inherit-m` | `flex-wrap: inherit;` |
-| `.flex-nowrap-l` | `flex-wrap: nowrap;` |
-| `.flex-wrap-l` | `flex-wrap: wrap;` |
-| `.flex-wrap-reverse-l` | `flex-wrap: wrap-reverse;` |
-| `.flex-wrap-inherit-l` | `flex-wrap: inherit;` |
+| `.fw-no` | `flex-wrap: nowrap;` |
+| `.fw-wrap` | `flex-wrap: wrap;` |
+| `.fw-wraprev` | `flex-wrap: wrap-reverse;` |
+| `.fw-i` | `flex-wrap: inherit;` |
+| `.fw-no-s` | `flex-wrap: nowrap;` |
+| `.fw-wrap-s` | `flex-wrap: wrap;` |
+| `.fw-wraprev-s` | `flex-wrap: wrap-reverse;` |
+| `.fw-i-s` | `flex-wrap: inherit;` |
+| `.fw-no-m` | `flex-wrap: nowrap;` |
+| `.fw-wrap-m` | `flex-wrap: wrap;` |
+| `.fw-wraprev-m` | `flex-wrap: wrap-reverse;` |
+| `.fw-i-m` | `flex-wrap: inherit;` |
+| `.fw-no-l` | `flex-wrap: nowrap;` |
+| `.fw-wrap-l` | `flex-wrap: wrap;` |
+| `.fw-wraprev-l` | `flex-wrap: wrap-reverse;` |
+| `.fw-i-l` | `flex-wrap: inherit;` |
 
 ### Responsive
 
@@ -66,7 +66,7 @@ Responsive variants are available for each class with the following suffixes:
 | `-m`   | `min-width: 48em`        |
 | `-l`   | `min-width: 96em`        |
 
-Example: `.flex-nowrap-m` applies the property at the medium breakpoint and above.
+Example: `.fw-no-m` applies the property at the medium breakpoint and above.
 
 ## Building
 
